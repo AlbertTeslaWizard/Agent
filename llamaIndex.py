@@ -27,7 +27,9 @@ if __name__ == '__main__':
     query_engine = index.as_query_engine()
 
     # 6. 提问
-    # response = query_engine.query("花语秘境的员工有几种角色，分别是什么？")
+    response = query_engine.query("花语秘境的员工有几种角色，分别是什么？")
     response2 = query_engine.query("花语秘境的Agent叫什么？")
-    # print(response)
+    print(response)
     print(response2)
+
+    index.storage_context.persist()
