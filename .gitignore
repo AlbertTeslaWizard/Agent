@@ -3,3 +3,5 @@ __pycache__/*
 *.txt
 *.json
 *.env
+*.csv
+*.pptx
